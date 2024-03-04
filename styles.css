@@ -1,10 +1,84 @@
-*,
-::before,
-::after {
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.logo {
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 30%;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.3em;
+}
+
+/* MAIN */
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+
+/* CLIENT TESTIMONIALS */
+
+.client-testimonials-section {
+  text-align: center;
+}
+
+.client-testimonials-section h3 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+}
+
+.client-img {
+  border-radius: 50%;
+}
+
+/* GALLERY */
+
+/* FOOTER */
 
 .attribution {
   font-size: 11px;
@@ -13,3 +87,5 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* UTILITY */

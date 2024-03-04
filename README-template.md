@@ -11,12 +11,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Resources](#resources)
 
 ## Overview
 
@@ -63,3 +58,7 @@ const proudOfThisFunc = () => {
   console.log("🎉");
 };
 ```
+
+## Resources
+
+[When to use image, figure, picture tag in html](https://www.youtube.com/watch?v=Xn5_gDQFyJg)
