@@ -51,9 +51,29 @@
       </nav>
 
       <h1>We are creatives</h1>
+      <img
+        src="./images/icon-arrow-down.svg"
+        alt="down arrow"
+        class="down-arrow"
+      />
     </header>
     <main>
-      <div class="description">
+      <div class="article">
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/mobile/image-transform.jpg"
+          />
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/desktop/image-transform.jpg"
+          />
+          <img
+            src="./images/desktop/image-transform.jpg"
+            alt="Egg on a yellow background"
+            class="article-img"
+          />
+        </picture>
         <h2>Transform your brand</h2>
         <p>
           We are a full-service creative agency specializing in helping brands
@@ -62,7 +82,22 @@
         </p>
         <button>Learn more</button>
       </div>
-      <div class="description">
+      <div class="article">
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/mobile/image-stand-out.jpg"
+          />
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/desktop/image-stand-out.jpg"
+          />
+          <img
+            src="./images/desktop/image-stand-out.jpg"
+            alt="Pink glass on a pink background"
+            class="article-img"
+          />
+        </picture>
         <h2>Stand out to the right audience</h2>
         <p>
           Using a collaborative formula of designers, researchers,
@@ -71,14 +106,44 @@
         </p>
         <button>Learn more</button>
       </div>
-      <div class="description">
+      <div class="article">
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/mobile/image-graphic-design.jpg"
+          />
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/desktop/image-graphic-design.jpg"
+          />
+          <img
+            src="./images/desktop/image-graphic-design.jpg"
+            alt="Two cherries on a green background"
+            class="article-img"
+          />
+        </picture>
         <h2>Graphic design</h2>
         <p>
           Great design makes you memorable. We deliver artwork that underscores
           your brand message and captures potential clients’ attention.
         </p>
       </div>
-      <div class="description">
+      <div class="article">
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/mobile/image-photography.jpg"
+          />
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/desktop/image-photography.jpg"
+          />
+          <img
+            src="./images/desktop/image-photography.jpg"
+            alt="Orange on a blue background"
+            class="article-img"
+          />
+        </picture>
         <h2>Photography</h2>
         <p>
           Increase your credibility by getting the most stunning, high-quality
@@ -147,7 +212,7 @@
           <img
             src="./images/desktop/image-gallery-milkbottles.jpg"
             alt="Three milk bottles with red lid"
-            class="milk-bottles-img"
+            class="gallery-img"
           />
         </picture>
         <picture>
@@ -162,7 +227,7 @@
           <img
             src="./images/desktop/image-gallery-orange.jpg"
             alt="Orange on a plate"
-            class="orange-img"
+            class="gallery-img"
           />
         </picture>
 
@@ -178,7 +243,7 @@
           <img
             src="./images/desktop/image-gallery-cone.jpg"
             alt="Ice cream cone"
-            class="cone-img"
+            class="gallery-img"
           />
         </picture>
         <picture>
@@ -193,17 +258,43 @@
           <img
             src="./images/desktop/image-gallery-sugar-cubes.jpg"
             alt="Sugar cubes"
-            class="sugar-cubes-img"
+            class="gallery-img"
           />
         </picture>
       </section>
-      <footer>
-        <nav>
+      <footer class="footer">
+        <h4>Sunnyside</h4>
+        <nav class="footer-nav">
           <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-socials">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="Facebook icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-instagram.svg" alt="Instagram icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt="Twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest icon"
+              /></a>
+            </li>
           </ul>
         </nav>
       </footer>
@@ -212,7 +303,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Christina</a>.
       </div>
     </main>
   </body>

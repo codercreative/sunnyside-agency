@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&display=swap");
 
+:root {
+  --soft-red: #fe7867;
+  --yellow: #fad400;
+  --dark-cyan: #25564b;
+  --dark-blue: #19536b;
+  /* (photography text) */
+  --moderate-cyan: #458c7e;
+  /* (footer) */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +22,6 @@ body {
 }
 
 main {
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -29,7 +38,7 @@ main {
 .logo {
   color: #fff;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 5%;
   width: 30%;
 }
@@ -45,20 +54,34 @@ main {
 
 h1 {
   font-family: "Fraunces", serif;
+  color: #fff;
+  font-size: 2.3rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  color: #fff;
-  letter-spacing: 0.3em;
+}
+
+.down-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0 auto;
+  height: 30%;
 }
 
 /* MAIN */
 h2 {
   font-family: "Fraunces", serif;
   font-weight: bold;
+}
+
+.article-img {
+  width: 100%;
 }
 
 /* CLIENT TESTIMONIALS */
@@ -77,8 +100,20 @@ h2 {
 }
 
 /* GALLERY */
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
 
+.gallery-img {
+  width: 100%;
+}
 /* FOOTER */
+
+.footer {
+  background-color: var(--moderate-cyan);
+}
 
 .attribution {
   font-size: 11px;
