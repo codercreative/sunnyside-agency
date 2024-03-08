@@ -51,12 +51,28 @@ Users should be able to:
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source
+    media="(max-width: 375px)"
+    srcset="./images/mobile/image-header.jpg"
+  />
+  <source
+    media="(min-width: 376px)"
+    srcset="./images/desktop/image-header.jpg"
+  />
+  <img
+    src="./images/desktop/image-header.jpg"
+    alt="Hero image of cut orange with blue background"
+    class="hero-img"
+  />
+</picture>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 ```
 

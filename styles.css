@@ -27,30 +27,68 @@ main {
 
 /* HERO */
 
+.off-screen-menu {
+  background-color: #fff;
+  border: 2px solid red;
+  height: 30vh;
+  width: 100%;
+  max-width: 250px;
+  position: fixed;
+
+  right: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.off-screen-menu:active {
+  right: 0;
+}
+
+/* .header-nav {
+  padding: 1rem;
+  display: flex;
+  background-color: blue;
+  border: 2px solid red;
+} */
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 5px;
+  width: 50px;
+  background-color: pink;
+}
+
 .hero-img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  position: relative;
+  /* position: relative; */
   z-index: -1;
 }
 
 .logo {
-  color: #fff;
-  position: absolute;
+  color: blue;
+  /* position: absolute; */
   top: 3%;
   left: 5%;
   width: 30%;
 }
 
-.navbar li {
+/* .navbar li {
   list-style: none;
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
-}
+} */
 
 h1 {
   font-family: "Fraunces", serif;
@@ -58,10 +96,10 @@ h1 {
   font-size: 2.3rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  position: absolute;
-  top: 25%;
+  /* position: absolute; */
+  /* top: 25%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); */
   text-align: center;
 }
 
