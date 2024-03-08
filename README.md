@@ -44,11 +44,14 @@ Users should be able to:
 
 ### Challenges along the way
 
-- Keeping track of all the "moving parts" in different browser sizes
-- Have text overlap images in some but not all sections of
+- Keeping track of all the "moving parts" in different screen sizes with grid and flexbox
 - Creating the hamburger nav
+- Have text overlap images in some but not all sections
+- Getting rid of default padding around images (solution: `display: block`)
 
 ### What I learned
+
+- Remembering to use the `picture` tag to switch between mobile and desktop images based on screen size:
 
 ```html
 <picture>
@@ -68,20 +71,21 @@ Users should be able to:
 </picture>
 ```
 
+- Making sure to add `display: block`:
+
 ```css
-.gallery-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+in the CSS reset to avoid any extra padding around the images
 
 ## Resources
+
+[Josh Comeau's custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 [When to use image, figure, picture tag in html](https://www.youtube.com/watch?v=Xn5_gDQFyJg)

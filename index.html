@@ -3,37 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <header class="hero-container">
-      <div class="off-screen-menu">
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li class="contact">Contact</li>
-        </ul>
-      </div>
-
-      <nav class="header-nav">
-        <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
     <div>
       <img src="images/logo.svg" alt="Sunnyside logo" class="logo" />
       <h1>We are creatives</h1>
@@ -53,106 +32,111 @@
           class="hero-img"
         />
       </picture>
-      <img
-        src="./images/icon-arrow-down.svg"
-        alt="down arrow"
-        class="down-arrow"
-      />
     </div>
     <main>
-      <div class="article">
-        <picture>
-          <source
-            media="(max-width: 375px)"
-            srcset="./images/mobile/image-transform.jpg"
-          />
-          <source
-            media="(min-width: 376px)"
-            srcset="./images/desktop/image-transform.jpg"
-          />
-          <img
-            src="./images/desktop/image-transform.jpg"
-            alt="Egg on a yellow background"
-            class="article-img"
-          />
-        </picture>
-        <h2>Transform your brand</h2>
-        <p>
-          We are a full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
-        </p>
-        <button>Learn more</button>
-      </div>
-      <div class="article">
-        <picture>
-          <source
-            media="(max-width: 375px)"
-            srcset="./images/mobile/image-stand-out.jpg"
-          />
-          <source
-            media="(min-width: 376px)"
-            srcset="./images/desktop/image-stand-out.jpg"
-          />
-          <img
-            src="./images/desktop/image-stand-out.jpg"
-            alt="Pink glass on a pink background"
-            class="article-img"
-          />
-        </picture>
-        <h2>Stand out to the right audience</h2>
-        <p>
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and extend
-          your brand in digital places.
-        </p>
-        <button>Learn more</button>
-      </div>
-      <div class="article">
-        <picture>
-          <source
-            media="(max-width: 375px)"
-            srcset="./images/mobile/image-graphic-design.jpg"
-          />
-          <source
-            media="(min-width: 376px)"
-            srcset="./images/desktop/image-graphic-design.jpg"
-          />
-          <img
-            src="./images/desktop/image-graphic-design.jpg"
-            alt="Two cherries on a green background"
-            class="article-img"
-          />
-        </picture>
-        <h2>Graphic design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients’ attention.
-        </p>
-      </div>
-      <div class="article">
-        <picture>
-          <source
-            media="(max-width: 375px)"
-            srcset="./images/mobile/image-photography.jpg"
-          />
-          <source
-            media="(min-width: 376px)"
-            srcset="./images/desktop/image-photography.jpg"
-          />
-          <img
-            src="./images/desktop/image-photography.jpg"
-            alt="Orange on a blue background"
-            class="article-img"
-          />
-        </picture>
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
-      </div>
-
+      <section class="article-section">
+        <div class="article">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="./images/mobile/image-transform.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="./images/desktop/image-transform.jpg"
+            />
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt="Egg on a yellow background"
+              class="article-img egg"
+            />
+          </picture>
+          <div class="article-text">
+            <h2>Transform your brand</h2>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="article">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="./images/mobile/image-stand-out.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="./images/desktop/image-stand-out.jpg"
+            />
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt="Pink glass on a pink background"
+              class="article-img"
+            />
+          </picture>
+          <div class="article-text">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="article">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="./images/mobile/image-graphic-design.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="./images/desktop/image-graphic-design.jpg"
+            />
+            <img
+              src="./images/desktop/image-graphic-design.jpg"
+              alt="Two cherries on a green background"
+              class="article-img"
+            />
+          </picture>
+          <div class="article-text">
+            <h2>Graphic design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="article">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="./images/mobile/image-photography.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="./images/desktop/image-photography.jpg"
+            />
+            <img
+              src="./images/desktop/image-photography.jpg"
+              alt="Orange on a blue background"
+              class="article-img"
+            />
+          </picture>
+          <div class="article-text">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="client-testimonials-section">
         <h3>Client testimonials</h3>
         <img
@@ -246,6 +230,7 @@
             src="./images/desktop/image-gallery-cone.jpg"
             alt="Ice cream cone"
             class="gallery-img"
+            
           />
         </picture>
         <picture>
@@ -261,6 +246,7 @@
             src="./images/desktop/image-gallery-sugar-cubes.jpg"
             alt="Sugar cubes"
             class="gallery-img"
+            
           />
         </picture>
       </section>
@@ -307,6 +293,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Christina</a>.
       </div>
-    </main>
+  
   </body>
 </html>
