@@ -84,6 +84,15 @@ svg {
 
 in the CSS reset to avoid any extra padding around the images
 
+Using 50vw for the article img as well as the article text to ensure that they both take up 50% of the row.
+
+```css
+.article-img,
+.article-text {
+  width: 50vw;
+}
+```
+
 ## Resources
 
 [Josh Comeau's custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
