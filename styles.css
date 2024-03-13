@@ -9,6 +9,10 @@
   /* (photography text) */
   --moderate-cyan: #458c7e;
   /* (footer) */
+  --very-dark-blue: #23303e;
+  --dark-greyish-blue: #5a636c;
+  --warm-greyish-blue: #818498;
+  --greyish-blue: #a7abae;
 }
 
 * {
@@ -19,6 +23,8 @@
 
 body {
   font-family: "Barlow", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 img,
@@ -49,6 +55,7 @@ h1 {
 h2 {
   font-family: "Fraunces", serif;
   font-weight: bold;
+  margin-bottom: 1em;
 }
 
 /* Making sure that text is placed on top of cherry and orange images */
@@ -73,7 +80,7 @@ h2 {
 }
 
 .article-text-fixed > h2 {
-  padding-bottom: 0.3em;
+  padding-bottom: 0.8em;
 }
 
 .article-img,
@@ -81,27 +88,65 @@ h2 {
   width: 100%;
 }
 
+.article-btn {
+  font-family: "Fraunces", serif;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
 /* CLIENT TESTIMONIALS SECTION */
 
 .client-testimonials-section {
   text-align: center;
-  padding: 1.5em 0.9em;
+}
+
+.client-testimonials-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
 }
 
 .client-testimonials-section h3 {
   font-family: "Fraunces", serif;
+  color: var(--greyish-blue);
+  font-size: 0.9rem;
   text-transform: uppercase;
+  margin: 2em 0 4em 0;
+  letter-spacing: 0.2rem;
 }
 
 .individual-client-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .client-img {
   border-radius: 50%;
+  width: 30%;
+  margin-bottom: 2em;
+}
+
+.client-quote-block {
+  margin-bottom: 3.5em;
+}
+
+.client-quote {
+  margin-bottom: 1.5em;
+}
+
+.client-name > p {
+  font-family: "Fraunces", serif;
+  margin-bottom: 0.3em;
+}
+
+.client-title {
+  font-weight: light;
+  display: block;
+  color: var(--greyish-blue);
 }
 
 /* GALLERY SECTION */
@@ -129,6 +174,23 @@ h2 {
 }
 
 /* UTILITY */
+.yellow-accent {
+  border-bottom: 4px solid transparent;
+}
+
+.yellow-accent:hover {
+  border-bottom: 4px solid var(--yellow);
+}
+
+.red-accent {
+  border-bottom: 4px solid transparent;
+}
+
+.red-accent:hover {
+  border-bottom: 4px solid var(--soft-red);
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 376px) {
   .article {
@@ -142,7 +204,7 @@ h2 {
 
   .article-text {
     width: 50vw;
-    padding: 0 3em;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,11 +212,26 @@ h2 {
   }
 
   .article-text > p {
-    padding: 1em 0 2em 0;
+    padding: 1em 3em;
   }
 
   .article-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .client-testimonials-wrapper {
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+  }
+
+  .individual-client-container {
+    width: 250px;
+    margin-right: 2em;
+  }
+
+  .individual-client-container:last-child {
+    margin-right: 0em;
   }
 
   .gallery-section {
