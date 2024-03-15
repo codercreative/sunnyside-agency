@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Challenges along the way
 
-- Keeping track of all the "moving parts" in different screen sizes with grid and flexbox
+- Keeping track of all the "moving parts" in different screen sizes with grid and flexbox and determining when I should use flexbox and when to use grid
 - Creating the hamburger nav
 - Have text overlap images in some but not all sections
 - Getting rid of default padding around images (solution: `display: block`)
@@ -71,7 +71,7 @@ Users should be able to:
 </picture>
 ```
 
-- Making sure to add `display: block`:
+- Making sure to add `display: block`to avoid any extra padding around the images:
 
 ```css
 img,
@@ -82,15 +82,21 @@ svg {
 }
 ```
 
-in the CSS reset to avoid any extra padding around the images
-
-Using 50vw for the article img as well as the article text to ensure that they both take up 50% of the row.
+Using 50vw for the article img as well as the article text to ensure that they both take up 50% of the row. I need to fix this with a container or other solution.
 
 ```css
 .article-img,
 .article-text {
   width: 50vw;
 }
+```
+
+When I added max-width to main the log and burger menu disappeared out of view on large screens.
+
+Learned how to keep a heading on one line:
+
+```html
+h1 { white-space: nowrap; }
 ```
 
 ## Resources

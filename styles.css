@@ -23,7 +23,6 @@
 
 body {
   font-family: "Barlow", sans-serif;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -39,14 +38,46 @@ svg {
 .hero-img {
   width: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.hamburger-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  top: 3%;
+  right: 3%;
+}
+
+.bar {
+  width: 100%;
+  background-color: #fff;
+  height: 3px;
 }
 
 h1 {
   font-family: "Fraunces", serif;
-  color: #000;
+  font-size: 1.1rem;
+  color: #fff;
   font-size: 2.3rem;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -59,6 +90,11 @@ h2 {
 }
 
 /* Making sure that text is placed on top of cherry and orange images */
+
+.article-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 .article {
   position: relative;
@@ -80,7 +116,7 @@ h2 {
 }
 
 .article-text-fixed > h2 {
-  padding-bottom: 0.8em;
+  padding-bottom: 0.2em;
 }
 
 .article-img,
@@ -173,37 +209,41 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
-/* UTILITY */
-.yellow-accent {
-  border-bottom: 4px solid transparent;
-}
-
-.yellow-accent:hover {
-  border-bottom: 4px solid var(--yellow);
-}
-
-.red-accent {
-  border-bottom: 4px solid transparent;
-}
-
-.red-accent:hover {
-  border-bottom: 4px solid var(--soft-red);
-}
-
 /* MEDIA QUERIES */
 
 @media (min-width: 376px) {
-  .article {
-    display: flex;
+  h1 {
+    white-space: nowrap;
   }
 
-  .article-img {
-    width: 50vw;
-    height: auto;
+  .article-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .transform {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .egg {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  .red-glass {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .stand-out {
+    grid-column: 2 / 3;
+    grid-row: 2;
   }
 
   .article-text {
-    width: 50vw;
+    /* width: 50vw; */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -213,10 +253,6 @@ h2 {
 
   .article-text > p {
     padding: 1em 3em;
-  }
-
-  .article-row-reverse {
-    flex-direction: row-reverse;
   }
 
   .client-testimonials-wrapper {
